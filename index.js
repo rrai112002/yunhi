@@ -8,7 +8,14 @@ const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 function getRandomDelay(min = 1000, max = 5000) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-(async () => {
+
+let a = 0;
+let b = 0;
+let c = 0;
+let d = 0;
+let e = 0;  
+console.log(a+b+c+d);
+(async ()  => {
   try {
     const browser = await puppeteer.launch({
       headless: false,
