@@ -1,0 +1,21 @@
+It looks like you are having issues with proxy settings when trying to load a schema. However, the `package.json` file you provided does not contain any proxy settings. Proxy settings are usually configured in environment variables or npm configuration files.
+
+To remove proxy settings, you can try the following steps:
+
+1. **Unset Environment Variables**:
+  If you have proxy settings set in your environment variables, you can unset them using the following commands in your terminal:
+
+  ```sh
+  unset http_proxy
+  unset https_proxy
+  ```
+
+2. **Remove Proxy from npm Configuration**:
+  If the proxy settings are configured in npm, you can remove them using the following commands:
+
+  ```sh
+  npm config rm proxy
+  npm config rm https-proxy
+  ```
+
+After performing these steps, try loading the schema again. If you still encounter issues, ensure that there are no other configurations or network settings that might be causing the problem.
